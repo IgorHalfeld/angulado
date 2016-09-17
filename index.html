@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angulado</title>
+</head>
+<body>
+
+
+  <h1 ang-bind="name"></h1>
+  <h1 ang-bind="age"></h1>
+  <input type="text" id="text">
+
+  <script src="dist/angulado.min.js"></script>
+
+  <script>
+
+  var App = new Angulado({
+    name: 'Igor',
+    age: 18
+  })
+
+  var text = document.getElementById('text')
+
+  text.addEventListener('input', (e) => {
+    App.data.name = e.target.value
+  })
+
+
+  </script>
+</body>
+</html>
