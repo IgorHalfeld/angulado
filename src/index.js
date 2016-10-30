@@ -1,4 +1,4 @@
 
-import Angulado from './angulado'
+import Angulado from './core/angulado'
 
 window.Angulado = Angulado
